@@ -1,0 +1,134 @@
+/* @font-face {
+    font-family: name;
+    src: url();
+} */
+
+/* * {
+ font-family: Arial, Helvetica, sans-serif; 
+ 
+}
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* haeder */
+
+.header {
+    background-color: black;
+    background-image: url("");
+    /*  TODO a changer suivant  maquette */
+
+    min-height: 100px; /* a ajuster  */
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav ul>div {
+    width:100%;
+    display: flex;
+    /*  TODO a changer suivant  maquette */
+    background-color: blue;
+    color: white;
+    /* fin TODO */
+    
+
+}
+
+.nav div>li {
+    
+    padding:.5rem .5rem;
+    list-style: none;
+
+}
+.nav ul{
+    display: flex;
+    
+}
+
+.burger {
+    display: fle;
+    justify-content: end;
+    color: white;
+}
+
+.burger li{
+    display: none; /* repesoterie */
+}
+
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav li:hover {
+     /* TODO a changer suivant maquette */
+    background-color: brown;
+    /*  fin TODO */
+   
+}
+/* fin header */
+
+/* Main */
+main{
+    min-height: 100px;/* pour  voir */
+    border: 1px red solid;/* a  enlever apres construction */
+}
+
+
+
+
+/* fin main */
+
+
+
+/*  footer */
+.footer {
+    /*  TODO a changer suivant  maquette*/
+    background-color: gray;
+    /*  fin  TODO */
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBlabla {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.power * {
+    /* text-decoration: underline; */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+
+/* fin footer */
+
+
+/* le responsive  */
+@media screen and (max-width:576px) {
+    .burger li{
+        display: flex; /* repesoterie */
+
+    }
+
+    .lg li{
+        display: none;
+    }
+}
