@@ -54,11 +54,11 @@
                         <div class=" imgContact col-4">
                             <!-- <img src="./img/contact.jpg" class="rounded" alt="Cinque Terre"> -->
                         </div>
-                        <div class="coordonee col-7">
+                        <div class="col-7">
                             <form action="" method="post">
 
 
-                                <div class="container">
+                                <div class="coordonee container">
 
                                     <div class="row">
                                         <p class="titreSection col-12">Vos Coordonnées</p>
@@ -86,7 +86,77 @@
                                             <label for="radioPart">Monsieur</label>
                                         </div>
                                     </div>
+                                    <div class="row inputText">
+                                        <input type="text" class="inText col-5" name="nom" placeholder="Nom">
+                                        <div class="col-1"></div>
+                                        <input type="text" class="inText col-5" name="prenom" placeholder="Prénom">
+                                    </div>
+                                    <div class="row inputText">
+                                        <input type="text" class="inText col-5" name="mail" placeholder="courriel">
+                                        <div class="col-1"></div>
+                                        <input type="text" class="inText col-5" name="tel" placeholder="tel">
+                                    </div>
+
+
                                 </div>
+
+                                <div class=" coordonee container">
+                                    <div class="row">
+                                        <p class="titreSection col-12">Votre demande</p>
+                                        <div class="col-6"><label for="residence">residence*</label></div>
+                                        <div class="col-6"><label for="sejour"></label>Type de sejour*</div>
+                                        <div class="dropdown col-6">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                selectionner
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Dieppe</a></li>
+                                                <li><a class="dropdown-item" href="#">Marseille</a></li>
+                                                <li><a class="dropdown-item" href="#">Bordeau</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown col-6">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                selectionner
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Long séjour</a></li>
+                                                <li><a class="dropdown-item" href="#">Séjour professionnel</a></li>
+                                                <li><a class="dropdown-item" href="#">Sémiminaire & réunions </a></li>
+                                                <li><a class="dropdown-item" href="#">Autre </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <p class="titreSection col-12">Message</p>
+                                            <textarea required="required" rows="4"
+                                                class="form-control form-textarea required" id="contact-message"
+                                                name="asah_simple_contact[message]" cols="60"></textarea>
+                                        </div>
+                                        <div class="option row">
+                                            <input class=" col-1" type="checkbox"
+                                                id="asah_simple_contact_newsletterOptin"
+                                                name="asah_simple_contact[newsletterOptin]" value="1">
+                                            <label class="souh col-11"
+                                                for="asah_simple_contact_newsletterOptin">Souhaitez-vous être informé en
+                                                avant première des bons plans et des offres spéciales All Suites Appart
+                                                Hôtel</label>
+                                            <input class=" col-1" type="checkbox"
+                                                id="asah_simple_contact_newsletterOptin"
+                                                name="asah_simple_contact[newsletterOptin]" value="1">
+                                            <label class="souh col-11"
+                                                for="asah_simple_contact_newsletterOptin">J’accepte
+                                                que mes données personnelles soient collectées aux fins de pouvoir me
+                                                contacter (par email et téléphone) en lien avec ma demande.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input name="contact-submit" type="submit" class="btn btn-primary form-submit btn btn-primary ajax-processed" id="button-contact-submit" value="Valider" data-nlok-ref-guid="dd7f8ca7-ed21-4a23-ec53-ffc91a95d271">
+
+
 
 
                         </div>

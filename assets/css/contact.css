@@ -14,8 +14,10 @@ header{
 }
 
 
+
 .imgContact{
     min-height: 300px;
+    max-height: 400px;
     background-image: url(../img/contact.jpg);
     background-position: center;
     background-size: cover;
@@ -31,15 +33,58 @@ header{
 
 .coordonee{
     border:#D6BA51 1px solid;
-}
+    margin-bottom: 2rem;
 
+}
+ 
 .titreSection{
     font-size: 2rem;
+    margin: 1rem;
     font-weight: bolder;
     color:#D6BA51;
 
 }
+form .row{
+    margin-bottom: 2rem;
+}
 .formRadio>input{
 
    margin-left: 1rem;
+  
+}
+
+.inputText input{
+    box-shadow: 5px 10px 20px gainsboro inset;
+
+}
+
+#dropdownMenuButton1, #dropdownMenuButton2{
+    width:80%;
+}
+textarea{
+    box-shadow: inset 0 0 10px 1px rgb(0 0 0 / 20%);
+}
+.souh{ font-weight: bold;
+
+}
+
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-submit{
+    
+    background-color: #d6ba51;
+    font-size: 30px;
+    width: 285px;
+    display: block;
+    
+    background-position: center right;
+    background-repeat: no-repeat;
+    margin: 0 auto 20px auto;
+    border: 1px solid #d6ba51;
+}
 }
