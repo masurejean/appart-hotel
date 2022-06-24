@@ -11,7 +11,7 @@
 
 .nomDuSite {
     font-family: 'Dancing Script', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-left: 1rem;
 }
 
@@ -24,7 +24,7 @@ header nav {
     align-items: center;
     position: fixed;
     width: 100vw;
-    height: 10vh;
+    height: 8vh;
     background-color: #c8bab9;
 }
 
@@ -36,7 +36,7 @@ header ul {
 header nav a {
     text-decoration: none;
     color: black;
-    padding: 1rem;
+    padding: .5rem;
     margin-top: .5rem;
     margin-left: 2rem;
     font-size: 1.5rem;
@@ -44,9 +44,7 @@ header nav a {
 }
 
 header a:hover {
-    background-color: rgb(131, 107, 107);
-    border-radius: 10%;
-    color: white;
+    color: rgb(93, 78, 78);
 }
 
 nav input,
@@ -56,9 +54,6 @@ button {
     padding: 1rem;
 }
 
-nav input:hover {
-    background-color: rgb(93, 78, 78);
-}
 
 #imgHeader {
     height: 100vh;
@@ -110,7 +105,7 @@ h2 {
 }
 
 #about p {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .savoirPlus{
@@ -119,7 +114,7 @@ justify-content: flex-end;
 }
 
 .savoirPlus button{
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: #ff914c;
     border-radius: 10%;
     margin-top: 2rem;
@@ -132,6 +127,7 @@ justify-content: flex-end;
 
 .imgAbout img {
     border-radius: 10%;
+    width: 100%;
 }
 
 /* SECTION SLIDER */ 
@@ -147,19 +143,16 @@ justify-content: flex-end;
 #prev1, #next1{
     position: absolute;
     color: black;
-    background-color: #ff914c;
-    border-radius: 10%;
     font-weight: 900;
     font-size: 3rem;
     top: 50%; 
-    padding: 1rem;
 }
 
 #prev1{
-    left: 20rem; 
+    left: 10px; 
 }
 #next1{
-    right: 20rem;
+    right: 10px;
 }
 
 #prev1:hover, #next1:hover{
@@ -167,8 +160,8 @@ justify-content: flex-end;
 }
 
 #slider img{
-    width: 800px;
-    height: 600px;
+    width: 625px;
+    height: 435px;
     border-radius: 10%;
 }
 
@@ -178,7 +171,7 @@ justify-content: flex-end;
     background-color: #c8bab9;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-around;
     padding: 3rem;
     margin: auto;
     padding-bottom: 3rem;
@@ -189,8 +182,7 @@ justify-content: flex-end;
 }
 
 .map img{
-    width: 500px;
-    height: 500px;
+    width: 100%;
     border: #ff914c 10px solid;
     border-radius: 10%;
 }
@@ -206,7 +198,7 @@ width: 40%;
 }
 
 .infosContact p{
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 #contact form{
@@ -224,11 +216,11 @@ justify-content: space-between;
 }
 
 .name{
-    width: 45%;
+    width: 48%;
 }
 
 .email{
-    width: 45%;
+    width: 48%;
 }
 
 .message{
@@ -242,7 +234,7 @@ justify-content: space-between;
     border: none;
     border-radius: 10%;
     padding: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-top: 0.5rem;
     width: fit-content;
     float: right;
@@ -260,23 +252,16 @@ justify-content: space-between;
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment:initial;
-    height: 500px;
+    height: 300px;
 }
 
-#sliderAvisClient img {
-    width: 500px;
-    height: 500px;
-}
 
 #prev, #next{
     position: absolute;
     color: black;
-    background-color: #c8bab9;
-    border-radius: 10%;
     font-weight: 900;
     font-size: 3rem;
     top: 50%; 
-    padding: 1rem;
 }
 
 #prev:hover, #next:hover{
@@ -284,10 +269,10 @@ justify-content: space-between;
 }
 
 #prev{
-    left: 5rem; 
+    left: 10px; 
 }
 #next{
-    right: 5rem;
+    right: 10px;
 }
 
 #slider img{
@@ -304,27 +289,23 @@ justify-content: space-between;
 }
 
 .facebook{
-    width: 90px;
-    height: 90px;
-}
-
-.facebook li{
-    list-style-type: none;
+    width: 70px;
+    height: 65px;
 }
 
 .instagram{
-    width: 200px;
-    height: 100px;
+    width: 70px;
+    height: 65px;
 }
 
 .tripadvisor{
-    width: 200px;
-    height: 100px;
+    width: 110px;
+    height: 65px;
 }
 
 .booking{
-    width: 200px;
-    height: 100px;
+    width: 70px;
+    height: 65px;
 }
 
 
