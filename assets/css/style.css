@@ -1,125 +1,92 @@
-/* @font-face {
-    font-family: name;
-    src: url();
-} */
-
-/* * {
- font-family: Arial, Helvetica, sans-serif; 
- 
+@font-face {
+    font-family: "lato";
+    src: url(../font/Lato-Regular.ttf);
 }
- */
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "lato", sans-serif;
+}
+
+.nomDuSite{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    margin-left: 1rem;
 }
 
 
-/* haeder */
+/* HEADER */
 
-.header {
-    background-color: black;
-    background-image: url("");
-    /*  TODO a changer suivant  maquette */
-
-    min-height: 100px; /* a ajuster  */
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.nav ul>div {
-    width:100%;
+header nav{
     display: flex;
-    /*  TODO a changer suivant  maquette */
-    background-color: blue;
-    color: white;
-    /* fin TODO */
-    
-
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 10vh; 
+    background-color: #c8bab9;
 }
 
-.nav div>li {
-    
-    padding:.5rem .5rem;
-    list-style: none;
-
-}
-.nav ul{
+header ul {
     display: flex;
-    
+    list-style-type: none;
 }
 
-.burger {
-    display: fle;
-    justify-content: end;
-    color: white;
-}
-
-.burger li{
-    display: none; /* repesoterie */
-}
-
-
-.nav a {
+header nav a {
     text-decoration: none;
+    color: black;
+    padding: 1rem;
+    margin-top: .5rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    transition: all .3s;
+}
+
+header a:hover {
+    background-color: rgb(131, 107, 107);
+    border-radius: 10%;
     color: white;
 }
 
-.nav li:hover {
-     /* TODO a changer suivant maquette */
-    background-color: brown;
-    /*  fin TODO */
-   
-}
-/* fin header */
-
-/* Main */
-main{
-    min-height: 100px;/* pour  voir */
-    border: 1px red solid;/* a  enlever apres construction */
+nav input,
+button {
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
 }
 
+nav input:hover {
+    background-color: rgb(93, 78, 78);
+}
 
-
-
-/* fin main */
-
-
-
-/*  footer */
-.footer {
-    /*  TODO a changer suivant  maquette*/
-    background-color: gray;
-    /*  fin  TODO */
-    min-height: 200px;
+#imgHeader {
+    height: 100vh;
+    background-image: url(../img/image_du_site.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;
 }
 
-.footerBlabla {
-    min-height: 150px;
-    display: flex;
-    align-items: center;
+h1{
+    background-color: #c8bab9;
+    padding: 1rem;
+    border-radius: 10%;
+    font-size: 2rem;
+    text-align: center;
 }
 
-.power * {
-    /* text-decoration: underline; */
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-
-
+.reserver{
+    margin-top: 4rem;
+    background-color: #ff914c;
+    border-radius: 10%;
+    font-size: 2rem;
 }
-
-
-/* fin footer */
-
 
 /* le responsive  */
 @media screen and (max-width:576px) {
