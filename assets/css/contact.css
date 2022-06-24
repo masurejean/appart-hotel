@@ -3,3 +3,31 @@
     padding: 0;
 }
 
+header{
+    min-height: 200px; /* pour avoir une vision du header */
+    background-color: gainsboro;
+}
+
+.bar{
+    min-height: 2px;
+    background-color: #D6BA51; /* a voir suivant la  charte couleur */
+}
+
+.acceuil span{
+    font-weight: bold;
+}
+
+.coordonee{
+    border:#D6BA51 1px solid;
+}
+
+.titreSection{
+    font-size: 2rem;
+    font-weight: bolder;
+    color:#D6BA51;
+
+}
+.formRadio>input{
+
+   margin-left: 1rem;
+}
