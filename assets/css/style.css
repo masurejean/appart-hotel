@@ -26,6 +26,7 @@ header nav {
     width: 100vw;
     height: 8vh;
     background-color: #c8bab9;
+   
 }
 
 header ul {
@@ -39,6 +40,7 @@ header nav a {
     padding: .5rem;
     margin-top: .5rem;
     margin-left: 2rem;
+    margin-right: 2rem;/*  pour eviter que le bouton connection soit sous la barre de scrool */
     font-size: 1.5rem;
     transition: all .3s;
 }
