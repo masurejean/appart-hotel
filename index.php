@@ -16,49 +16,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- PAGES NAV -->
+    <!-- PAGES NAV (CONTACT ET RESERVATION) -->
     <link rel="stylesheet" href="./assets/css/contact.css">
     <script src="./assets/js/contact.js" defer></script>
     <link rel="stylesheet" href="./assets/css/reservation.css">
     <script src="./assets/js/reservation.js"></script>
-    <!--  LINK CSS PAGE ACCUEIL-->
+    <!--  LINK CSS  ET SCRIPT JS PAGE ACCUEIL-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <p class="nomDuSite">L'Appart</p>
-                <a href="">
-                    <li><i class="fa-solid fa-house"></i> Accueil</li>
-                </a>
-                <a href="">
-                    <li><i class="fa-solid fa-tag"></i> Tarifs</li>
-                </a>
-                <a href="">
-                    <li><i class="fa-solid fa-calendar-check"></i> Réservation</li>
-                </a>
-                <a href="./assets/contact.html">
-                    <li><i class="fa-solid fa-phone"></i> Contact</li>
-                </a>
-                <a href="">
-                    <li><i class="fa-solid fa-bell-concierge"></i> Services</li>
-                </a>
-            </ul>
-            <ul>
-                <a href="">
-                    <li><i class="fa-solid fa-user"></i> Connexion</li>
-                </a>
-            </ul>
-        </nav>
-        <div id="imgHeader">
-            <h1>PROFITEZ DE LA LIBERTÉ D'UN APPARTEMENT ET DES SERVICES <br> D'UN HÔTEL POUR TRAVAILLER EN TOUTE
-                SÉRÉNITÉ ! </h1>
-            <button class="reserver">Réserver</button>
-        </div>
-    </header>
+    <?php include "header.php" ?>
 
 
     <main>
@@ -119,30 +88,8 @@
     </main>
 
 
-    <footer>
-        <div id="sliderAvisClient">
-            <div id="prev"> <i class="fa-solid fa-circle-left"></i> </div> 
-            <div id="next"> <i class="fa-solid fa-circle-right"></i> </div>
-            <img src="" alt="">
-        </div>
 
-        <div class="social">
-            <a href="https://www.facebook.com/">
-                    <img class="facebook" src="./assets/img/facebook.png" alt="facebook">
-            </a>
-            <a href="https://www.instagram.com/?hl=fr">
-                <img class="instagram" src="./assets/img/instagram.png" alt="instagram">
-            </a>
-            <a href="https://www.tripadvisor.fr/">
-                <img class="tripadvisor" src="./assets/img/tripadvisor.png" alt="tripadvisor">
-            
-            </a>
-            <a href="https://www.booking.com/index.fr.html">
-                <img class="booking" src="./assets/img/booking.png" alt="booking">
-            </a>
-            
-        </div>
-    </footer>
+    <?php include "footer.php" ?>
 </body>
 
 </html>
