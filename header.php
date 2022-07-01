@@ -10,7 +10,7 @@
         <a href="">
             <li><i class="fa-solid fa-calendar-check"></i> Réservation</li>
         </a>
-        <a href="./assets/contact.html">
+        <a href="./contact.php">
             <li><i class="fa-solid fa-phone"></i> Contact</li>
         </a>
         <a href="">
