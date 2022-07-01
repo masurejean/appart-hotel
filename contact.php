@@ -1,3 +1,30 @@
+<?php
+if(isset($_POST['submit'])){
+   /* echo var_dump($_POST); */
+   $particulier = strip_tags($_POST['particulier']);
+   $professionnel = strip_tags($_POST['professionnel']);
+   $madame = strip_tags($_POST['madame']);
+   $monsieur = strip_tags($_POST['monsieur']);
+   $nom = strip_tags($_POST['nom']);
+   $prenom = strip_tags($_POST['prenom']);
+   $mail = strip_tags($_POST['mail']);
+   $tel = strip_tags($_POST['tel']);
+   $simpleMessage = strip_tags($_POST['simpleMessage']);
+   $newsLetterOption = strip_tags($_POST['newsLetterOption']);
+   $newCollect = strip_tags($_POST["newCollect"]);
+
+
+
+   
+
+
+
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,6 +33,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
+
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
@@ -25,11 +53,9 @@
     <link rel="stylesheet" href="./assets/css/reservation.css">
     <script src="./assets/js/reservation.js"></script>
     <!-- import style de la  page -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
     <!-- fin d'import de style -->
-
-    
 </head>
 
 <body>
@@ -70,7 +96,7 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <p><a href="../index.html">Acceuil</a> >> RESTONS EN CONTACT</p>
+                <p><a href="../index.html">Accueil</a> >> RESTONS EN CONTACT</p>
 
                 <div class="titre col-5">
                     <h1>RESTONS EN CONTACT</h1>
@@ -124,9 +150,9 @@
                                         <!-- selection Titre -->
                                         <div class="col-2">Titre *</div>
                                         <div class="formRadio col-10">
-                                            <input type="radio" name="Madame" id="radioPart" value="Madame">
+                                            <input type="radio" name="madame" id="radioPart" value="Madame">
                                             <label for="radioPart">Madame</label>
-                                            <input type="radio" name="Monsieur" id="radioPart" value="Monsieur">
+                                            <input type="radio" name="monsieur" id="radioPart" value="Monsieur">
                                             <label for="radioPart">Monsieur</label>
                                         </div>
                                     </div>
@@ -156,9 +182,9 @@
                                                 selectionner
                                             </button>
                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a class="dropdown-item" href="#">Dieppe</a></li>
-                                                <li><a class="dropdown-item" href="#">Marseille</a></li>
-                                                <li><a class="dropdown-item" href="#">Bordeaux</a></li>
+                                                <li><a class="dropdown-item" href="">Dieppe</a></li>
+                                                <li><a class="dropdown-item" href="">Marseille</a></li>
+                                                <li><a class="dropdown-item" href="">Bordeaux</a></li>
                                             </ul>
                                         </div>
                                         <div class="dropdown col-6">
@@ -168,22 +194,22 @@
                                                 selectionner
                                             </button>
                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a class="dropdown-item" href="#">Long séjour</a></li>
-                                                <li><a class="dropdown-item" href="#">Séjour professionnel</a></li>
-                                                <li><a class="dropdown-item" href="#">Sémiminaire & réunions </a></li>
-                                                <li><a class="dropdown-item" href="#">Autre </a></li>
+                                                <li><a class="dropdown-item" href="">Long séjour</a></li>
+                                                <li><a class="dropdown-item" href="">Séjour professionnel</a></li>
+                                                <li><a class="dropdown-item" href="">Sémiminaire & réunions </a></li>
+                                                <li><a class="dropdown-item" href="">Autre </a></li>
                                             </ul>
                                         </div>
                                         <div class="row">
                                             <p class="titreSection col-12">Message</p>
                                             <textarea required="required" rows="4"
                                                 class="form-control form-textarea required" id="contact-message"
-                                                name="asah_simple_contact[message]" cols="60"></textarea>
+                                                name="simpleMessage" cols="60"></textarea>
                                         </div>
                                         <div class="option row">
                                             <input class=" col-1" type="checkbox"
                                                 id="asah_simple_contact_newsletterOptin"
-                                                name="asah_simple_contact[newsletterOptin]" value="1">
+                                                name="newsLetterOption" value="1">
                                             <label class="souh col-11"
                                                 for="asah_simple_contact_newsletterOptin">Souhaitez-vous être informé en
                                                 avant première des bons plans et des offres spéciales Appart
@@ -191,7 +217,7 @@
                                                 <p></p>
                                             <input class=" col-1" type="checkbox"
                                                 id="asah_simple_contact_newsletterOptin"
-                                                name="asah_simple_contact[newsletterOptin]" value="1">
+                                                name="newCollect" value="1">
                                             <label class="souh col-11"
                                                 for="asah_simple_contact_newsletterOptin">J’accepte
                                                 que mes données personnelles soient collectées aux fins de pouvoir me
@@ -199,7 +225,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <input name="contact-submit" type="submit"
+                                <input name="submit" type="submit"
                                     class="btn btn-primary form-submit btn btn-primary ajax-processed"
                                     id="button-contact-submit" value="Valider"
                                     data-nlok-ref-guid="dd7f8ca7-ed21-4a23-ec53-ffc91a95d271">
