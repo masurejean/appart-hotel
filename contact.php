@@ -1,12 +1,9 @@
 <?php
 if(isset($_POST['submit'])){
    
-    echo var_dump($_POST); 
-     
-   $particulier = strip_tags($_POST['particulier']);
-   $professionnel = strip_tags($_POST['professionnel']);
-   $madame = strip_tags($_POST['madame']);
-   $monsieur = strip_tags($_POST['monsieur']);
+    /* echo var_dump($_POST);  */
+   $Statut = strip_tags($_POST['statut']);
+   $genre = strip_tags($_POST['genre']);
    $nom = strip_tags($_POST['nom']);
    $prenom = strip_tags($_POST['prenom']);
    $mail = strip_tags($_POST['mail']);
@@ -14,7 +11,7 @@ if(isset($_POST['submit'])){
    $simpleMessage = strip_tags($_POST['simpleMessage']);
    $newsLetterOption = strip_tags($_POST['newsLetterOption']);
    $newCollect = strip_tags($_POST["newCollect"]);
-   $sejour = strip_tags($_TOP['sejour']);
+   
 }
 
 
@@ -146,9 +143,9 @@ if(isset($_POST['submit'])){
                                         <!-- selection entre pro et particulier -->
                                         <div class="col-2">vous êtes *</div>
                                         <div class="formRadio col-10">
-                                            <input type="radio" name="particulier" id="radioPart" value="Particulier">
+                                            <input type="radio" name="statut" id="radioPart" value="Particulier">
                                             <label for="radioPart">Particulier</label>
-                                            <input type="radio" name="professionnel" id="radioPart"
+                                            <input type="radio" name="statut" id="radioPart"
                                                 value="professionnel">
                                             <label for="radioPart">professionnel</label>
                                         </div>
@@ -157,9 +154,9 @@ if(isset($_POST['submit'])){
                                         <!-- selection Titre -->
                                         <div class="col-2">Titre *</div>
                                         <div class="formRadio col-10">
-                                            <input type="radio" name="madame" id="radioPart" value="Madame">
+                                            <input type="radio" name="genre" id="radioPart" value="Madame">
                                             <label for="radioPart">Madame</label>
-                                            <input type="radio" name="monsieur" id="radioPart" value="Monsieur">
+                                            <input type="radio" name="genre" id="radioPart" value="Monsieur">
                                             <label for="radioPart">Monsieur</label>
                                         </div>
                                     </div>
