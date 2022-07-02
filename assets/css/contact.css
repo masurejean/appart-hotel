@@ -7,6 +7,8 @@ header nav{
     min-height:100px;
 }
 
+
+
 header ul{
     display:flex;
     
@@ -37,7 +39,7 @@ header ul{
 
 }
 
-.titreSection {
+.titreSection  {
     font-size: 2rem;
     margin: 1rem;
     font-weight: bolder;

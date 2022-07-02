@@ -1,6 +1,8 @@
 <?php
 if(isset($_POST['submit'])){
-   /* echo var_dump($_POST); */
+   
+    echo var_dump($_POST); 
+     
    $particulier = strip_tags($_POST['particulier']);
    $professionnel = strip_tags($_POST['professionnel']);
    $madame = strip_tags($_POST['madame']);
@@ -12,13 +14,7 @@ if(isset($_POST['submit'])){
    $simpleMessage = strip_tags($_POST['simpleMessage']);
    $newsLetterOption = strip_tags($_POST['newsLetterOption']);
    $newCollect = strip_tags($_POST["newCollect"]);
-
-
-
-   
-
-
-
+   $sejour = strip_tags($_TOP['sejour']);
 }
 
 
@@ -48,10 +44,9 @@ if(isset($_POST['submit'])){
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- PAGES NAV -->
-    <link rel="stylesheet" href="./assets/css/contact.css">
+
     <script src="./assets/js/contact.js" defer></script>
-    <link rel="stylesheet" href="./assets/css/reservation.css">
-    <script src="./assets/js/reservation.js"></script>
+    
     <!-- import style de la  page -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/contact.css">
@@ -59,11 +54,11 @@ if(isset($_POST['submit'])){
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <nav>
             <ul>
                 <p class="nomDuSite">L'Appart</p>
-                <a href="../index.html">
+                <a href="./index.php">
                     <li><i class="fa-solid fa-house"></i> Accueil</li>
                 </a>
                 <a href="">
@@ -92,14 +87,15 @@ if(isset($_POST['submit'])){
         </div>
 
 
-    </header>
+    </header> -->
+    <?php include  "header.php"  ?>
     <main>
         <div class="container-fluid">
             <div class="row">
-                <p><a href="../index.html">Accueil</a> >> RESTONS EN CONTACT</p>
+                <p><a href="./index.php">Accueil</a> >> RESTONS EN CONTACT</p>
 
-                <div class="titre col-5">
-                    <h1>RESTONS EN CONTACT</h1>
+                <div class="titreSection col-5">
+                    <h2>RESTONS EN CONTACT</h2>
                 </div>
             </div>
             <div class="row">
@@ -182,23 +178,23 @@ if(isset($_POST['submit'])){
                                                 selectionner
                                             </button>
                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a class="dropdown-item" href="">Dieppe</a></li>
-                                                <li><a class="dropdown-item" href="">Marseille</a></li>
-                                                <li><a class="dropdown-item" href="">Bordeaux</a></li>
+                                                <li>Dieppe</li>
+                                                <li>Marseille</li>
+                                                <li>Bordeaux</li>
                                             </ul>
                                         </div>
                                         <div class="dropdown col-6">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                id="dropdownMenuButton2" data-bs-toggle="dropdown"
-                                                aria-expanded="false">
-                                                selectionner
-                                            </button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a class="dropdown-item" href="">Long séjour</a></li>
-                                                <li><a class="dropdown-item" href="">Séjour professionnel</a></li>
-                                                <li><a class="dropdown-item" href="">Sémiminaire & réunions </a></li>
-                                                <li><a class="dropdown-item" href="">Autre </a></li>
-                                            </ul>
+                                            <input  name = 'sejour' class="btn btn-secondary dropdown-toggle" type="text"
+                                                 list="sejour" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                                value = selectionner>
+                                            
+                                            <datalistlist  id=dropdownMenuButton2 class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <option>Long séjour
+                                                <option>Séjour professionnel
+                                                <option>Sémiminaire & réunions 
+                                                <option>Autre 
+                                            </datalistlist>
                                         </div>
                                         <div class="row">
                                             <p class="titreSection col-12">Message</p>
