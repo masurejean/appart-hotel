@@ -51,6 +51,17 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/contact.css">
     <!-- fin d'import de style -->
+
+    <script>
+        function combo(thelist, theinput)
+        {
+            theinput = document.getElementById(theinput);  
+            let idx = thelist.selectedIndex;
+            let content = thelist.options[idx].innerHTML;
+            theinput.value = content;	
+        }
+
+    </script>
 </head>
 
 <body>
@@ -172,29 +183,30 @@ if(isset($_POST['submit'])){
                                         <div class="col-6"><label for="residence">residence*</label></div>
                                         <div class="col-6"><label for="sejour"></label>Type de sejour*</div>
                                         <div class="dropdown col-6">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                           <!--  <input class="btn btn-secondary dropdown-toggle" type="button"
                                                 id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                                aria-expanded="false">
-                                                selectionner
-                                            </button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li>Dieppe</li>
-                                                <li>Marseille</li>
-                                                <li>Bordeaux</li>
-                                            </ul>
+                                                aria-expanded="false"
+                                                value = > -->
+                                            
+                                            <select name="liste1" class="liste1 col-12 inText" aria-labelledby="dropdownMenuButton1" value = <?php echo @$_POST['liste1']?>>
+                                                <option>Dieppe
+                                                <option>Marseille
+                                                <option>Bordeaux
+                                            </select>
                                         </div>
-                                        <div class="dropdown col-6">
-                                            <input  name = 'sejour' class="btn btn-secondary dropdown-toggle" type="text"
+                                         <div class="dropdown col-6">
+                                         <!--   <input  name = 'sejour' class="btn btn-secondary dropdown-toggle" type="text"
                                                  list="sejour" id="dropdownMenuButton2" data-bs-toggle="dropdown"
                                                 aria-expanded="false"
-                                                value = selectionner>
+                                                value = selectionner>  -->
                                             
-                                            <datalistlist  id=dropdownMenuButton2 class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <select name=liste2 class="liste2 col-12 inText" aria-labelledby="dropdownMenuButton1"<?php echo @$_POST['liste1']?>>
                                                 <option>Long séjour
                                                 <option>Séjour professionnel
                                                 <option>Sémiminaire & réunions 
                                                 <option>Autre 
-                                            </datalistlist>
+                                            </select>
+                                        <script>combo(liste2,sejour)</script>
                                         </div>
                                         <div class="row">
                                             <p class="titreSection col-12">Message</p>
