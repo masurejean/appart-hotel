@@ -11,6 +11,8 @@ if(isset($_POST['submit'])){
    $simpleMessage = strip_tags($_POST['simpleMessage']);
    $newsLetterOption = strip_tags($_POST['newsLetterOption']);
    $newCollect = strip_tags($_POST["newCollect"]);
+
+   /* TODO connection   database */
    
 }
 
@@ -203,11 +205,11 @@ if(isset($_POST['submit'])){
                                                 <option>Sémiminaire & réunions 
                                                 <option>Autre 
                                             </select>
-                                        <script>combo(liste2,sejour)</script>
+                                        <!-- <script>combo(liste2,sejour)</script> -->
                                         </div>
                                         <div class="row">
                                             <p class="titreSection col-12">Message</p>
-                                            <textarea required="required" rows="4"
+                                            <textarea  rows="4"
                                                 class="form-control form-textarea required" id="contact-message"
                                                 name="simpleMessage" cols="60"></textarea>
                                         </div>

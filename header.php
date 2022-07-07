@@ -14,7 +14,7 @@
 <nav>
     <ul class = menu >
         <p class="nomDuSite">L'Appart</p>
-        <a href="">
+        <a href="./index.php">
             <li><i class="fa-solid fa-house"></i> Accueil</li>
         </a>
         <a href="">
