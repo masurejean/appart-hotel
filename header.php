@@ -14,13 +14,13 @@
 <nav>
     <ul class = menu >
         <p class="nomDuSite">L'Appart</p>
-        <a href="">
+        <a href="index.php">
             <li><i class="fa-solid fa-house"></i> Accueil</li>
         </a>
         <a href="">
             <li><i class="fa-solid fa-tag"></i> Tarifs</li>
         </a>
-        <a href="">
+        <a href="reservation.php">
             <li><i class="fa-solid fa-calendar-check"></i> Réservation</li>
         </a>
         <a href="./contact.php">

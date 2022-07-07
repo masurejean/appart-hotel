@@ -20,17 +20,16 @@
     <link rel="stylesheet" href="./assets/css/contact.css">
     <script src="./assets/js/contact.js" defer></script>
     <script src="./assets/js/reservation.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reservation.css">
     <link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css">
 
 </head>
 
 <body>
-    <header>
-       <?php
-       include "header.php"
-       ?>
-    </header>
+
+       <?php  include "header.php"   ?>
+ 
     
     <main>
         <br><br><br>
@@ -75,11 +74,9 @@
     </main>
 
     
-    <footer>
-    <?php
-       include "footer.php"
-       ?>
-    </footer>
+   
+    <?php include "footer.php" ?>
+   
 </body>
 
 </html>
