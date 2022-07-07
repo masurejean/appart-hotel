@@ -1,0 +1,325 @@
+@font-face {
+    font-family: "lato";
+    src: url(../font/Lato-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "lato", sans-serif;
+}
+
+.nomDuSite {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+
+/* HEADER */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    background-color: #c8bab9;
+   
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    padding: .5rem;
+    margin-top: .5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;/*  pour eviter que le bouton connection soit sous la barre de scrool */
+    font-size: 1.5rem;
+    transition: all .3s;
+}
+
+header a:hover {
+    color: rgb(93, 78, 78);
+}
+
+nav input,
+button {
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+}
+
+
+#imgHeader {
+    height: 100vh;
+    background-image: url(../img/image_du_site.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c8bab9;
+}
+
+h1 {
+    background-color: #c8bab9;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.reserver {
+    margin-top: 4rem;
+    background-color: #ff914c;
+    border-radius: 10%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* SECTION ABOUT */
+
+#about {
+    background-color: #c8bab9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.aboutLeft {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+#about p {
+    font-size: 1rem;
+}
+
+.savoirPlus{
+display: flex;
+justify-content: flex-end;
+}
+
+.savoirPlus button{
+    font-size: 1rem;
+    background-color: #ff914c;
+    border-radius: 10%;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.imgAbout {
+    width: 40%;
+}
+
+.imgAbout img {
+    border-radius: 10%;
+    width: 100%;
+}
+
+/* SECTION SLIDER */ 
+
+#slider{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #c8bab9;
+    padding-top: 3rem;
+}
+
+#prev1, #next1{
+    position: absolute;
+    color: black;
+    font-weight: 900;
+    font-size: 3rem;
+    top: 50%; 
+}
+
+#prev1{
+    left: 10px; 
+}
+#next1{
+    right: 10px;
+}
+
+#prev1:hover, #next1:hover{
+    cursor: pointer;
+}
+
+#slider img{
+    width: 625px;
+    height: 435px;
+    border-radius: 10%;
+}
+
+/* SECTION CONTACT */
+
+#contact{
+    background-color: #c8bab9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 3rem;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.map{
+    width: 40%;
+}
+
+.map img{
+    width: 100%;
+    border: #ff914c 10px solid;
+    border-radius: 10%;
+}
+
+.infosContact{
+width: 40%;
+}
+
+.infosContact img{
+    width: 60px;
+    height: 50px;
+    margin-top: 2rem;
+}
+
+.infosContact p{
+    font-size: 1rem;
+}
+
+#contact form{
+margin-top: 3rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+#contact input{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    box-sizing: border-box;
+}
+
+.name{
+    width: 48%;
+}
+
+.email{
+    width: 48%;
+}
+
+.message{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#contact #send {
+    background-color: #ff914c;
+    color: black;
+    border: none;
+    border-radius: 10%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    width: fit-content;
+    float: right;
+    cursor: pointer;
+}
+
+/* FOOTER */ 
+
+#sliderAvisClient{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/plage_de_dieppe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment:initial;
+    height: 300px;
+}
+
+
+#prev, #next{
+    position: absolute;
+    color: black;
+    font-weight: 900;
+    font-size: 3rem;
+    top: 50%; 
+}
+
+#prev:hover, #next:hover{
+    cursor: pointer;
+}
+
+#prev{
+    left: 10px; 
+}
+#next{
+    right: 10px;
+}
+
+#slider img{
+    width: 800px;
+    height: 600px;
+}
+
+.social{
+    background-color: #c8bab9;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.facebook{
+    width: 70px;
+    height: 65px;
+}
+
+.instagram{
+    width: 70px;
+    height: 65px;
+}
+
+.tripadvisor{
+    width: 110px;
+    height: 65px;
+}
+
+.booking{
+    width: 70px;
+    height: 65px;
+}
+
+
+/* RESPONSIVE  */
+
+@media screen and (max-width:576px) {
+    .burger li {
+        display: flex;
+    }
+
+    .lg li {
+        display: none;
+    }
+}

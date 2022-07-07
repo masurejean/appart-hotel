@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "lato";
+    src: url(../font/Lato-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "lato", sans-serif;
+}
+
+.nomDuSite {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+
+/* HEADER */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    background-color: #c8bab9;
+   
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    padding: .5rem;
+    margin-top: .5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;/*  pour eviter que le bouton connection soit sous la barre de scrool */
+    font-size: 1.5rem;
+    transition: all .3s;
+}
+
+header a:hover {
+    color: rgb(93, 78, 78);
+}
+
+nav input,
+button {
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+}
+
+
+#imgHeader {
+    height: 100vh;
+    background-image: url(../img/image_du_site.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c8bab9;
+}
+
+h1 {
+    background-color: #c8bab9;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.reserver {
+    margin-top: 4rem;
+    background-color: #ff914c;
+    border-radius: 10%;
+    font-size: 2rem;
+    cursor: pointer;
+}
