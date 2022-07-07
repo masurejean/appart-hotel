@@ -9,13 +9,9 @@
     <!--  GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Raleway:wght@100;400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
     <!-- FONT AWESOME ICONES -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- PAGES NAV (CONTACT ET RESERVATION) -->
     <link rel="stylesheet" href="./assets/css/contact.css">
     <script src="./assets/js/contact.js" defer></script>
@@ -31,7 +27,11 @@
 
 
     <main>
-        
+        <div id="imgHeader">
+            <h1>" PROFITEZ DE LA LIBERTÉ D'UN APPARTEMENT ET DES SERVICES <br> D'UN HÔTEL POUR TRAVAILLER EN TOUTE
+                SÉRÉNITÉ ! "</h1>
+            <button class="reserver">Réserver</button>
+        </div>
         <section id="about">
             <div class="aboutLeft">
                 <h2>Plus qu'un bureau !</h2>
@@ -56,7 +56,7 @@
         </section>
 
         <div id="slider">
-            <div id="prev1"> <i class="fa-solid fa-circle-left"></i> </div> 
+            <div id="prev1"> <i class="fa-solid fa-circle-left"></i> </div>
             <div id="next1"> <i class="fa-solid fa-circle-right"></i> </div>
             <img src="" alt="">
         </div>
