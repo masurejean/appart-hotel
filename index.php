@@ -23,14 +23,19 @@
 </head>
 
 <body>
-    <?php include "header.php" ?>
+    <?php require "bd.php";
+    $client = $statementClients->fetchAll();
+    ?>
 
+    <?php include "header.php" ?>
 
     <main>
         <div id="imgHeader">
             <h1>" PROFITEZ DE LA LIBERTÉ D'UN APPARTEMENT ET DES SERVICES <br> D'UN HÔTEL POUR TRAVAILLER EN TOUTE
                 SÉRÉNITÉ ! "</h1>
-            <button class="reserver">Réserver</button>
+            <a href="./reservation.php">
+                <button class="reserver">Réserver</button>
+            </a>
         </div>
         <section id="about">
             <div class="aboutLeft">
@@ -47,7 +52,9 @@
                     Placeat dicta velit eaque accusamus praesentium dolore sint iure odit!</fuga>
                 </p>
                 <div class="savoirPlus">
+                    <!-- <a href="page service"> -->
                     <button>En savoir plus</button>
+                    <!-- </a> -->
                 </div>
             </div>
             <div class="imgAbout">
