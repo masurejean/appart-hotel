@@ -1,0 +1,17 @@
+.reservation{
+    background-color: #c8bab9;
+    color: black;
+}
+
+
+.reservation h2{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2rem;
+}
+.form-group{
+    width: 25%;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    
+}

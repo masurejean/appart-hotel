@@ -30,7 +30,7 @@
 
        <?php  include "header.php"   ?>
  
-    
+<!-- partie RESERVATION !!!!!!!!!!!!-->
    <div class="reservation">
         <br><br><br>
         <h2>RESERVATION</h2>
