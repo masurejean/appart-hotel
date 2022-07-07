@@ -92,6 +92,13 @@
                 </div>
             </div>
         </section>
+
+        <div id="sliderAvisClient">
+            <div id="prev"> <i class="fa-solid fa-circle-left"></i> </div> 
+            <div id="next"> <i class="fa-solid fa-circle-right"></i> </div>
+            <img src="" alt="">
+        </div>
+
     </main>
 
 
