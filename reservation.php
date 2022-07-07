@@ -31,7 +31,7 @@
        <?php  include "header.php"   ?>
  
     
-    <main>
+   <div class="reservation">
         <br><br><br>
         <h2>RESERVATION</h2>
         <div class="container">
@@ -71,9 +71,9 @@
                 </select>
             </div>
         </div>
-    </main>
+  
 
-    
+    </div>
    
     <?php include "footer.php" ?>
    
