@@ -1,18 +1,67 @@
+@font-face {
+    font-family: "lato";
+    src: url(../font/Lato-Regular.ttf);
+}
+
+* {
+    
+    font-family: "lato", sans-serif;
+
+}
+
+
 .reservation{
     background-color: #c8bab9;
     color: black;
+    
 }
-
+.input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 2rem;
+    
+    
+}
 
 .reservation h2{
-    display: flex;
-    justify-content: center;
-    letter-spacing: 2rem;
+
+    color: black;
+         
+}
+.reservation h3{
+    font-style: italic;
+}
+.container{
+    
+    width: 50%;
+    margin: auto;  
+    box-sizing: border-box;
+
+}
+.button{
+    color: black;
+}
+.imgresa{
+display: flex;
+justify-content: center;
+margin-top: 5rem;
+
+
+}
+.container img{
+    width: 50%;
     
 }
-.form-group{
-    width: 25%;
-    margin-top: 1rem;
-    margin-bottom:1rem;
-    
+
+.btnResa{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 3rem;
+
+}
+.btnResa p{
+    text-align: center;
 }
