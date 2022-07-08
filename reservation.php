@@ -1,3 +1,9 @@
+<?php require "bd.php";
+    $client = $statementClients->fetchAll();
+    ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
