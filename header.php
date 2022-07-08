@@ -27,7 +27,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa-solid fa-tag"></i> Tarifs</a>
+          <a class="nav-link" href="tarifs.php"><i class="fa-solid fa-tag"></i> Tarifs</a>
         </li>
         <li class="reservation.php">
           <a class="nav-link" href="reservation.php"><i class="fa-solid fa-calendar-check"></i> Réservation</a>

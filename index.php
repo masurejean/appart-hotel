@@ -12,11 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
     <!-- FONT AWESOME ICONES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- PAGES NAV (CONTACT ET RESERVATION) -->
+    <!-- PAGES NAV (CONTACT, RESERVATION, SERVICES ET CONNEXION) -->
     <link rel="stylesheet" href="./assets/css/contact.css">
     <script src="./assets/js/contact.js" defer></script>
     <link rel="stylesheet" href="./assets/css/reservation.css">
     <script src="./assets/js/reservation.js"></script>
+    <link rel="stylesheet" href="./assets/css/services.css">
+    <link rel="stylesheet" href="./assets/css/connexion.css">
     <!--  LINK CSS  ET SCRIPT JS PAGE ACCUEIL-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/script.js" defer></script>

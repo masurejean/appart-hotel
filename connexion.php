@@ -55,7 +55,7 @@ if (isset($_POST['send'])) {
     <!-- HEADER -->
     <?php include "header.php" ?>
     <main>
-        <div class="container">
+        <div class="inputCo">
             <!-- EMAIL -->
             <div class="form-group">
                 <label for="exampleInputEmail1" class="form-label mt-4">Email</label>
@@ -82,8 +82,8 @@ if (isset($_POST['send'])) {
             <button type="submit" class="btn btn-primary" name="send">Se connecter</button>
             <br><br>
         </div>
+        <br><br><br>
     </main>
-    
     <!-- FOOTER -->
     <?php include "footer.php" ?>
 </body>

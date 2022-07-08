@@ -1,0 +1,25 @@
+.salleCo{
+width: 400px;
+margin-left: 1rem;
+}
+
+.chambre{
+    width: 400px;
+    margin-left: 1rem;
+}
+
+.allTarifs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.card-text{
+    font-size: 2rem;
+}
+
+main {
+    background-color: #c8bab9;
+}
