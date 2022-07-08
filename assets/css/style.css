@@ -15,47 +15,7 @@
     margin-left: 1rem;
 }
 
-
-/* HEADER */
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100vw;
-    height: 8vh;
-    background-color: #c8bab9;
-   
-}
-
-header ul {
-    display: flex;
-    list-style-type: none;
-}
-
-header nav a {
-    text-decoration: none;
-    color: black;
-    padding: .5rem;
-    margin-top: .5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;/*  pour eviter que le bouton connection soit sous la barre de scrool */
-    font-size: 1.5rem;
-    transition: all .3s;
-}
-
-header a:hover {
-    color: rgb(93, 78, 78);
-}
-
-nav input,
-button {
-    background-color: transparent;
-    border: none;
-    padding: 1rem;
-}
-
+/* MAIN */
 
 #imgHeader {
     height: 100vh;
@@ -71,16 +31,18 @@ button {
     background-color: #c8bab9;
 }
 
-h1 {
-    background-color: #c8bab9;
+#imgHeader h1 {
+    background-color: #e956209c;
+    color: white;
     padding: 1rem;
     font-size: 2rem;
     text-align: center;
 }
 
-.reserver {
+#imgHeader button {
     margin-top: 4rem;
-    background-color: #ff914c;
+    background-color: #e95420;
+    color: white;
     border-radius: 10%;
     font-size: 2rem;
     cursor: pointer;
@@ -118,7 +80,8 @@ justify-content: flex-end;
 
 .savoirPlus button{
     font-size: 1rem;
-    background-color: #ff914c;
+    background-color: #e95420;
+    color: white;
     border-radius: 10%;
     margin-top: 2rem;
     cursor: pointer;
@@ -186,7 +149,7 @@ justify-content: flex-end;
 
 .map img{
     width: 100%;
-    border: #ff914c 10px solid;
+    border: #e95420 10px solid;
     border-radius: 10%;
 }
 
@@ -232,8 +195,8 @@ justify-content: space-between;
 }
 
 #contact #send {
-    background-color: #ff914c;
-    color: black;
+    background-color: #e95420;
+    color: white;
     border: none;
     border-radius: 10%;
     padding: 0.5rem;
@@ -243,8 +206,6 @@ justify-content: space-between;
     float: right;
     cursor: pointer;
 }
-
-/* FOOTER */ 
 
 #sliderAvisClient{
     position: relative;
@@ -283,8 +244,11 @@ justify-content: space-between;
     height: 600px;
 }
 
-.social{
+/* FOOTER */ 
+footer{
     background-color: #c8bab9;
+}
+.social{
     display: flex;
     justify-content: center;
     padding-top: 3rem;
@@ -311,6 +275,20 @@ justify-content: space-between;
     height: 65px;
 }
 
+footer li {
+    list-style: none;
+}
+
+footer h4{
+    color: #e95420;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+
+}
 
 /* RESPONSIVE  */
 

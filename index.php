@@ -36,6 +36,7 @@
             <a href="./reservation.php">
                 <button class="reserver">Réserver</button>
             </a>
+            
         </div>
         <section id="about">
             <div class="aboutLeft">
