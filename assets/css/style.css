@@ -62,7 +62,7 @@
 .aboutLeft {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
 }
 
 h2 {
@@ -71,11 +71,6 @@ h2 {
 
 #about p {
     font-size: 1rem;
-}
-
-.savoirPlus{
-display: flex;
-justify-content: flex-end;
 }
 
 .savoirPlus button{
@@ -88,7 +83,7 @@ justify-content: flex-end;
 }
 
 .imgAbout {
-    width: 40%;
+    width: 30%;
 }
 
 .imgAbout img {
