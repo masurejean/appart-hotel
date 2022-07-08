@@ -36,7 +36,7 @@
           <a class="nav-link" href="contact.php"><i class="fa-solid fa-phone"></i> Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa-solid fa-bell-concierge"></i> Services</a>
+          <a class="nav-link" href="./services.php"><i class="fa-solid fa-bell-concierge"></i> Services</a>
         </li>
       </ul>
       <form class="d-flex">

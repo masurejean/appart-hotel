@@ -67,9 +67,9 @@
                 <img src="./assets/img/section_plusquunbureau.jpg" alt="about">
                 <br><br><br>
                 <div class="savoirPlus">
-                    <!-- <a href="page service"> -->
+                    <a href="services.php">
                     <button>En savoir plus</button>
-                    <!-- </a> -->
+                    </a>
                 </div>
             </div>
         </section>
