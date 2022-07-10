@@ -3,6 +3,7 @@
 if (isset($_POST['send'])) {
     $email = strip_tags($_POST['email']);
     $password = strip_tags($_POST['password']);
+    $error = null;
     $error1 = null;
     $error2 = null;
 
@@ -64,6 +65,10 @@ if (isset($_POST['send'])) {
             <?php
             if (!empty($error1)) {
             ?>
+            <div class="alert alert-dismissible alert-danger">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Attention !</strong> <?= $error1 ?>
+            </div>
             <?php
             }
             ?>
@@ -74,7 +79,10 @@ if (isset($_POST['send'])) {
             </div>
             <?php
             if (!empty($error2)) {
-            ?>
+            ?><div class="alert alert-dismissible alert-danger">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>Attention !</strong> <?= $error2 ?>
+        </div>
             <?php
             }
             ?>

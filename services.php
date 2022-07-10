@@ -57,11 +57,11 @@
                     <h4 class="card-title"><i class="fa-solid fa-circle-info"></i> Informations importantes</h4>
                     <p class="card-text">
                         ● Arrivée à partir de 15h et Départ au plus tard 11h. <br>
-                        ● Animaux Non Admis <br>
-                        ● Parking payant à proximité <br>
                         ● La plage et le centre ville sont à 3mn à pied. <br>
+                        ● Parkings sécurisé et gratuit <br>
                         ● Nombreux commerces et supermarché à proximité dans un rayon de 200m <br>
                         ● Non fumeur <br>
+                        ● Animaux non admis <br>
                         ● Les détériorations seront facturées <br>
                     </p>
                 </div>
@@ -79,10 +79,9 @@
                     <h4 class="card-title"><i class="fa-solid fa-user-tie"></i> Pour les Professionnels</h4>
                     <p class="card-text">
                         ● Le forfait nuit + Salle de Réunion, avec pause séminaire offerte (boissons) <br>
-                        ● Les différentes capacités des salles et leur facilité d’aménagement (de 10 à 100 personnes) * <br>
+                        ● Les différentes capacités des salles et leur facilité d’aménagement (de 10 à 100 personnes) <br>
                         ● Le matériel audiovisuel à disposition <br>
                         ● Le wifi gratuit et illimité <br>
-                        ● Les parkings sécurisés et gratuits * <br>
                         ● Les patios et coins détentes pour les pauses <br>
                         ● Nos différentes solutions de restauration sur place ou à proximité <br>
                         ● Nos possibilités de compléter vos réunions par des activités de groupe personnalisées : golf, karting… <br>
@@ -111,13 +110,12 @@
                     <h4 class="card-title"><i class="fa-solid fa-person-breastfeeding"></i> Pour les familles</h4>
                     <p class="card-text">
                         ● Petit déjeuner <br>
-                        ● room service <br>
+                        ● Room service <br>
                         ● Spa / hammam <br>
-                        ● pour les enfants : un petit coffre avec des jouets <br>
-                        ● pour les bébés : offrir des produits de toilettes pour nouveaux-nés <br>
-                        ● pour les couples : coupe de champagne offerte au bar, ou une bouteille dans leur chambre à leur arrivée. <br>
+                        ● Pour les enfants : un petit coffre avec des jouets <br>
+                        ● Pour les bébés : offrir des produits de toilettes pour nouveaux-nés <br>
+                        ● Pour les couples : coupe de champagne offerte au bar, ou une bouteille dans leur chambre à leur arrivée. <br>
                         une coupe de fruits frais de saison. <br>
-                        ● animaux admis <br>
                     </p>
                 </div>
             </div>

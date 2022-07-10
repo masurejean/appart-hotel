@@ -36,14 +36,21 @@
                 <rect width="100%" height="100%" fill="#868e96"></rect>
                 </svg>
                 <div class="card-body">
-                    <p class="card-text">160€/mois</p>
+                    <p class="card-text">160€/journée</p>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><i class="fa-solid fa-check"></i> Wifi, Café, Espace partagé</li>
                     <li class="list-group-item"> <i class="fa-solid fa-check"></i> Box Phone (Accès libre suivant disponibilité)</li>
                     <li class="list-group-item"> <i class="fa-solid fa-check"></i> Impression : Facturation à la page selon tarif en vigueur</li>
+                    <a href="./reservation.php">
+                        <button type="submit" class="btn btn-primary btnTarifs" name="send">Je réserve</button>
+                    </a>
                 </ul>
             </div>
+
+
+
+
 
             <div class="card mb-3">
                 <div class="card-body">
@@ -60,6 +67,9 @@
                     <li class="list-group-item"><i class="fa-solid fa-check"></i> Petit déjeuné</li>
                     <li class="list-group-item"> <i class="fa-solid fa-check"></i> Room Service</li>
                     <li class="list-group-item"> <i class="fa-solid fa-check"></i> Pour les couples : Une coupe de champagne offerte <br> au bar, ou une bouteille dans leur chambre à leur arrivée.</li>
+                    <a href="./reservation.php">
+                        <button type="submit" class="btn btn-primary" name="send">Je réserve</button>
+                    </a>
                 </ul>
             </div>
 
@@ -78,6 +88,9 @@
                     <li class="list-group-item"><i class="fa-solid fa-check"></i> Petit déjeuné</li>
                     <li class="list-group-item"> <i class="fa-solid fa-check"></i> Room Service</li>
                     <li class="list-group-item"> <i class="fa-solid fa-check"></i> Pour les enfants : un petit coffre avec des jouets.</li>
+                    <a href="./reservation.php">
+                        <button type="submit" class="btn btn-primary" name="send">Je réserve</button>
+                    </a>
                 </ul>
             </div>
     </main>
