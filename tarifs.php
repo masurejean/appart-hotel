@@ -57,7 +57,7 @@
                     <h5 class="card-title">CHAMBRE DOUBLE</h5>
                     <h6 class="card-subtitle text-muted">1 lit double</h6>
                 </div>
-                <img class="chambre" src="./assets/img/chambre_double.jpeg" alt="">
+                <img class="chambre1" src="./assets/img/chambre_double.jpeg" alt="">
                 <rect width="100%" height="100%" fill="#868e96"></rect>
                 </svg>
                 <div class="card-body">
@@ -78,7 +78,7 @@
                     <h5 class="card-title">CHAMBRE TRIPLE</h5>
                     <h6 class="card-subtitle text-muted">1 lit simple et 1 lit double</h6>
                 </div>
-                <img class="chambre" src="./assets/img/chambre _triple.jpeg" alt="">
+                <img class="chambre2" src="./assets/img/chambre _triple.jpeg" alt="">
                 <rect width="100%" height="100%" fill="#868e96"></rect>
                 </svg>
                 <div class="card-body">

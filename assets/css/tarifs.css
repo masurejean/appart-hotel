@@ -3,9 +3,16 @@ width: 400px;
 margin-left: 1rem;
 }
 
-.chambre{
+.chambre1{
     width: 400px;
     margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.chambre2{
+    width: 400px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .allTarifs{
