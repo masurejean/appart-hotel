@@ -64,7 +64,7 @@ require "bd.php";
         <div class="container">
         <h2>Réserver votre prochain séjour</h2>
         <br>
-        <h3>"Chaque logement est une destination en soi"</h3>
+        <h3>"Chaque logement est une destination en soi."</h3>
             <div class="input">
                 <div class="dateArr">
                     <label for="start">Date d'arrivée</label>
@@ -103,14 +103,8 @@ require "bd.php";
                 </div>
                 <div class="btnResa">
                     <button class="btn btn-lg btn-primary" type="button">je reserve</button>
-                    <div class="form-group">
-  <label class="col-form-label mt-4" for="inputDefault"></label>
-  <input type="text" class="form-control" placeholder="TARIF" id="inputDefault">
-</div>
-                    
-                    <p>Taxe et frais compris</p>
-                    <p>Non remboursable Payez à l'avance</p>
-                </div>
+                                        
+                                    </div>
                 <div class="imgresa">
                     <img src="./assets/img/resa.jpg" alt="">
                 </div>

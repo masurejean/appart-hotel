@@ -49,10 +49,11 @@ justify-content: center;
 margin-top: 5rem;
 
 
+
 }
 .container img{
     width: 50%;
-    
+    border-radius: 10%;
 }
 
 .btnResa{
