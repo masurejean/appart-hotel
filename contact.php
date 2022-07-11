@@ -203,7 +203,7 @@ if(isset($_POST['submit'])){
                                                 <option>Sémiminaire & réunions 
                                                 <option>Autre 
                                             </select>
-                                        <script>combo(liste2,sejour)</script>
+                                        <!-- <script>combo(liste2,sejour)</script> -->
                                         </div>
                                         <div class="row">
                                             <p class="titreSection col-12">Message</p>
