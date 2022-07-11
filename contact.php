@@ -93,13 +93,6 @@ if (isset($_POST['submit'])) {
     <main>
         <div class="container-fluid">
             <div class="row">
-                <p><a href="./index.php">Accueil</a> >> RESTONS EN CONTACT</p>
-
-                <div class="titreSection col-5">
-                    <h2>RESTONS EN CONTACT</h2>
-                </div>
-            </div>
-            <div class="row">
                 <div class="bar col-5"></div> <!-- separation avec bar  -->
                 <div class=" acceuil col-12">
                     <p></p>
