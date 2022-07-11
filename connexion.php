@@ -90,7 +90,7 @@ if (isset($_POST['send'])) {
             <button type="submit" class="btn btn-primary" name="send">Se connecter</button>
             <br><br>
         </div>
-        <br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
     </main>
     <!-- FOOTER -->
     <?php include "footer.php" ?>
