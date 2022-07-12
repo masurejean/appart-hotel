@@ -1,5 +1,6 @@
 <?php
 require "DB.php";
+session_start();
 if (isset($_POST['send'])) {
     $nom = strip_tags($_POST['nom']);
     $prenom = strip_tags($_POST['prenom']);
@@ -32,7 +33,16 @@ if (isset($_POST['send'])) {
     if (empty($password)) {
         $error4 .= "<p>Le champ password ne doit pas être vide.</p>";
     }
-    
+
+    /* if (empty($error) || empty($error1) || empty($error2) || empty($error3) || empty($error4)) {
+        $statement = $pdo->prepare("SELECT * FROM clients WHERE mail = :email");
+        $statement->execute(
+            [
+                "email" => $_POST['email']
+            ]
+        );
+$client = $statement -> fetch();
+var_dump($client);die; */
     if (empty($error1) || empty($error2) || empty($error3) || empty($error4)) {
         $hash = password_hash($password, PASSWORD_BCRYPT);
         var_dump($hash, $nom, $prenom, $email);
@@ -43,7 +53,6 @@ if (isset($_POST['send'])) {
             "mail" => $_POST['email'],
             "password" => $hash,
         ]);
-        // var_dump($statement);
         header("location:connexion.php");
     }
 
@@ -151,7 +160,7 @@ if (isset($_POST['send'])) {
                 <br><br>
                 <h4>Déjà inscrit ?</h4>
                 <a href="connexion.php">
-                    <button type="submit" class="btn btn-primary" name="connexion">Se connecter</button>
+                    <button type="button" class="btn btn-primary" name="connexion">Se connecter</button>
                 </a>
             </div>
         </form>

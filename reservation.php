@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "DB.php";
 $reservationOk = null;
 if (isset($_POST['reserver'])) {
@@ -59,7 +60,6 @@ $nbr_enfants = strip_tags($_POST['nbr_enfants']);
 
     <!-- partie RESERVATION !!!!!!!!!!!!-->
     <div class="reservation">
-        <br><br><br><br><br>
 
         <div class="container">
             <h2>Réserver votre prochain séjour</h2>
