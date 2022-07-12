@@ -55,7 +55,6 @@ if (isset($_POST["submit"])) {
 
     <!-- partie RESERVATION !!!!!!!!!!!!-->
     <div class="reservation">
-        <br><br><br><br><br>
 
         <div class="container">
             <h2>Réserver votre prochain séjour</h2>
@@ -63,28 +62,29 @@ if (isset($_POST["submit"])) {
             <h3>"Chaque logement est une destination en soi."</h3>
             <div class="input">
                 <div class="dateArr">
-                    <label for="start">Date d'arrivée</label>
+                    <label for="start">Date d'arrivée</label><br>
                     <input type="date" id="start" name="trip-start" value="2022-07-01" min="2022-07-01" max="2023-12-31">
                     <label class="col-form-label mt-4" for="inputDefault"></label>
-                    <input type="time" class="form-control" placeholder="time" id="time">
+
                 </div>
 
                 <div class="dateDep">
-                    <label for="start">Date de depart</label>
+                    <label for="start">Date de depart</label><br>
                     <input type="date" id="start" name="trip-start" value="2022-07-01" min="2022-07-01" max="2023-12-31">
                     <label class="col-form-label mt-4" for="inputDefault"></label>
 
-                    <input type="time" class="form-control" placeholder="" id="time">
+
                 </div>
 
                 <div class="nombPersA">
                     <label for="exampleSelect1" class="form-label mt-4">Nombre de personnes adultes</label>
-                    <select class="form-select" id="exampleSelect1">
+                    <select class="form-select" id="exampleSelect1"><br>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
                         <option>4</option>
                         <option>5</option>
+
                     </select>
                 </div>
                 <div class="nombEnf">

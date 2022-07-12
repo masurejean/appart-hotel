@@ -43,18 +43,22 @@
           </ul>
           <form class="d-flex">
             <ul>
-            <?php if(empty($_SESSION)){?>
-              <a href="inscription.php">
-                <li><i class="fa-solid fa-user-plus"></i> Inscription</li>
-              </a>
-              <a href="connexion.php">
-                <li><i class="fa-solid fa-user"></i> Connexion</li>
-              </a>
-              <?php }else { ?>
+              <?php if (empty($_SESSION)) { ?>
+                <a href="inscription.php">
+                  <li><i class="fa-solid fa-user-plus"></i> Inscription</li>
+                </a>
+                <a href="connexion.php">
+                  <li><i class="fa-solid fa-user"></i> Connexion</li>
+                </a>
+              <?php } else { ?>
+                <?php if (!empty($_SESSION)) {
+                echo "<p class='prenomProfil'>" . $_SESSION['prenom'] . "<p>";
+              } ?>
                 <a href="connexion.php?deconnexion=true">
-                <li><i class="fa-solid fa-user"></i> Deconnexion</li>
-              </a>
+                  <li><i class="fa-solid fa-user"></i> Deconnexion</li>
+                </a>
               <?php } ?>
+              
             </ul>
           </form>
         </div>

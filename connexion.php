@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "DB.php";
 
 if(!empty($_GET['deconnexion'])){
@@ -33,6 +34,9 @@ if (isset($_POST['send'])) {
         );
 
         $client = $statement->fetch();
+        
+        $_SESSION['prenom'] = $client['prenom'];
+        var_dump($_SESSION['prenom']);
         $passwordBaseDonnee = $client['password'];
         if (password_verify($_POST['password'], $passwordBaseDonnee)) {
             header("location:index.php");
