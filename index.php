@@ -93,20 +93,6 @@ $client = $statementClients->fetchAll();
                 <p class="adresse"><img src="./assets/img/adress.png" alt="adresse">123 rue des champs, 76200 DIEPPE</p>
                 <p class="phone"><img src="./assets/img/phone.png" alt="phone">02 35 83 00 00</p>
                 <p class="mail"><img src="./assets/img/mail.png" alt="mail">lappart@gmail.com</p>
-                <form action="" method="post">
-                    <div class="name">
-                        <input type="text" placeholder="Name" name="name" required>
-                    </div>
-                    <div class="email">
-                        <input type="email" placeholder="Email" name="mail">
-                    </div>
-                    <div class="message">
-                        <input type="text" placeholder="Message" name="message">
-                    </div>
-                </form>
-                <div>
-                    <input type="submit" value="Envoyer" name="submited" id="send">
-                </div>
             </div>
         </section>
 
