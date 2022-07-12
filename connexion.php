@@ -1,5 +1,12 @@
 <?php
-/* var_dump($_POST);  */
+require "DB.php";
+
+if(!empty($_GET['deconnexion'])){
+    session_unset();
+    unset($_SESSION);
+  }
+
+
 if (isset($_POST['send'])) {
     $email = strip_tags($_POST['email']);
     $password = strip_tags($_POST['password']);
@@ -9,17 +16,29 @@ if (isset($_POST['send'])) {
 
     if (empty($email)) {
         $error1 .= "<p>Le champ e-mail ne doit pas être vide.</p>";
-        // l'email doit être valide (exemple@exemple.com)
-    } elseif (!preg_match(" /^[^\W][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\@[a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\.[a-zA-Z]{2,4}$/ ", $email))
-    /* autre solution elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) */ {
+    } elseif (!preg_match(" /^[^\W][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\@[a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\.[a-zA-Z]{2,4}$/ ", $email)) {
         $error1 .= "<p>Le format e-mail n'est pas valide.</p>";
     }
 
     if (empty($password)) {
         $error2 .= "<p>Le champ password ne doit pas être vide.</p>";
     }
-    if ($error1 === null && $error2 === null) {
-        header("location:index.php");
+
+    if (empty($error)) {
+        $statement = $pdo->prepare("SELECT * FROM clients WHERE mail = :email");
+        $statement->execute(
+            [
+                "email" => $_POST['email']
+            ]
+        );
+
+        $client = $statement->fetch();
+        $passwordBaseDonnee = $client['password'];
+        if (password_verify($_POST['password'], $passwordBaseDonnee)) {
+            header("location:index.php");
+        } else {
+            echo "Mot de passe invalide.";
+        }
     }
 }
 ?>
@@ -49,47 +68,47 @@ if (isset($_POST['send'])) {
 </head>
 
 <body>
-    <?php require "bd.php";
-    $client = $statementClients->fetchAll();
-    ?>
+  
 
     <!-- HEADER -->
     <?php include "header.php" ?>
     <main>
-        <div class="inputCo">
-            <!-- EMAIL -->
-            <div class="form-group">
-                <label for="exampleInputEmail1" class="form-label mt-4">Email</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer votre Email" name="email" value="<?php echo @$_POST["email"] ?>">
+        <form action="" method="POST">
+            <div class="inputCo">
+                <!-- EMAIL -->
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="form-label mt-4">Email</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer votre Email" name="email" value="<?php echo @$_POST["email"] ?>">
+                </div>
+                <?php
+                if (!empty($error1)) {
+                ?>
+                    <div class="alert alert-dismissible alert-danger">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>Attention !</strong> <?= $error1 ?>
+                    </div>
+                <?php
+                }
+                ?>
+                <!-- PASSWORD -->
+                <div class="form-group">
+                    <label for="exampleInputPassword1" class="form-label mt-4">Mot de Passe</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Entrer votre mot de passe" name="password">
+                </div>
+                <?php
+                if (!empty($error2)) {
+                ?><div class="alert alert-dismissible alert-danger">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>Attention !</strong> <?= $error2 ?>
+                    </div>
+                <?php
+                }
+                ?>
+                <br><br>
+                <button type="submit" class="btn btn-primary" name="send">Se connecter</button>
+                <br><br>
             </div>
-            <?php
-            if (!empty($error1)) {
-            ?>
-            <div class="alert alert-dismissible alert-danger">
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                <strong>Attention !</strong> <?= $error1 ?>
-            </div>
-            <?php
-            }
-            ?>
-            <!-- PASSWORD -->
-            <div class="form-group">
-                <label for="exampleInputPassword1" class="form-label mt-4">Mot de Passe</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Entrer votre mot de passe" name="password">
-            </div>
-            <?php
-            if (!empty($error2)) {
-            ?><div class="alert alert-dismissible alert-danger">
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-            <strong>Attention !</strong> <?= $error2 ?>
-        </div>
-            <?php
-            }
-            ?>
-            <br><br>
-            <button type="submit" class="btn btn-primary" name="send">Se connecter</button>
-            <br><br>
-        </div>
+        </form>
         <br><br><br><br><br><br><br><br><br><br>
     </main>
     <!-- FOOTER -->

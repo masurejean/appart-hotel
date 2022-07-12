@@ -188,9 +188,7 @@ if (isset($_POST['submit'])) {
                                                 <option>Sémiminaire & réunions
                                                 <option>Autre
                                             </select>
-                                            <script>
-                                                combo(liste2, sejour)
-                                            </script>
+                                        <!-- <script>combo(liste2,sejour)</script> -->
                                         </div>
                                         <div class="row">
                                             <p class="titreSection col-12">Message</p>
@@ -199,7 +197,8 @@ if (isset($_POST['submit'])) {
                                         <div class="option row">
                                             <input class=" col-1" type="checkbox" id="asah_simple_contact_newsletterOptin" name="newsLetterOption" value="1">
                                             <label class="souh col-11" for="asah_simple_contact_newsletterOptin">Souhaitez-vous être informé en
-                                                avant première des bons plans et des offres spéciales Appart
+                                             
+                                            3es offres spéciales Appart
                                                 Hôtel</label>
                                             <p></p>
                                             <input class=" col-1" type="checkbox" id="asah_simple_contact_newsletterOptin" name="newCollect" value="1">

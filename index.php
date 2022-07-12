@@ -1,3 +1,9 @@
+<?php
+session_start();
+require "DB.php";
+$client = $statementClients->fetchAll();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -25,9 +31,6 @@
 </head>
 
 <body>
-    <?php require "bd.php";
-    $client = $statementClients->fetchAll();
-    ?>
 
     <?php include "header.php" ?>
 
@@ -49,7 +52,7 @@
                     et nichée dans la profonde vallée de l’Arques. Cette station balnéaire, dont la renommée
                     débuta au 19° siècle (oui : la ville de Dieppe fut la première ville balnéaire de France ! ), est cajolée par un climat océanique marqué :
                     les hivers y sont doux, et les étés agréables. <br><br>
-                     Dieppe propose de nombreux points d’intérêts historiques, culturels et touristiques : de sa
+                    Dieppe propose de nombreux points d’intérêts historiques, culturels et touristiques : de sa
                     promenade splendide qui longe le littoral normand, aux animations estivales quotidiennes en passant par ses activités nautiques et son.
                     Festival International de cerf-volants, qui a lieu tous les deux ans, cette charmante commune typiquement normande n’a pas fini de vous
                     surprendre ! Alors, désireux de venir prendre un grand bol d’air marin ? Aucun problème, on vous a préparé les logements de vos rêves pour
@@ -58,11 +61,11 @@
                     charme unique ! Il y est très agréable de s’y balader à pied ou en vélo afin d’y découvrir, sur le front de mer, l’Hôtel royal et quelques
                     maisons historiques comme l’impressionnante Maison Miffant et ses colombages stupéfiants, son Château Musée et le Pont Colbert Tournant! <br><br>
                     Et N'oublions pas, Le Marché du Samedi ( Élu Meilleur Marché de France ) !... <br><br>
-                      Pour qui aime la mer et le poisson, allez donc au musée de
+                    Pour qui aime la mer et le poisson, allez donc au musée de
                     l’Estran – Cité de la mer - , puis partez vous faire un petit restaurant de produits du terroir ( Terre et Mer ) qui saura vous conseiller
                     les mets les plus savoureux !
                 </p>
-               
+
             </div>
             <div class="imgAbout">
                 <br><br><br><br><br>
@@ -70,7 +73,7 @@
                 <br><br><br>
                 <div class="savoirPlus">
                     <a href="services.php">
-                    <button>En savoir plus</button>
+                        <button>En savoir plus</button>
                     </a>
                 </div>
             </div>
