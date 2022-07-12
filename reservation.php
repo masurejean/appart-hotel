@@ -1,30 +1,26 @@
-<?php require "bd.php";
-$client = $statementClients->fetchAll();
-?>
 <?php
-require "bd.php";
-    if(isset($_POST["submit"])){
-        $insertionC = $pdo->prepare("INSERT INTO clients(prenom,nom,mail,tel ) values(:prenom,:nom,:mail,:tel)");
-        $insertionC->execute(
-            [
-                "prenom"=>$_POST["prenom"],
-                "nom"=>$_POST["nom"],
-                "mail"=>$_POST["mail"],
-                "tel"=>$_POST["tel"],
-            ]
-            );
+require "DB.php";
+if (isset($_POST["submit"])) {
+    $insertionC = $pdo->prepare("INSERT INTO clients(prenom,nom,mail,tel ) values(:prenom,:nom,:mail,:tel)");
+    $insertionC->execute(
+        [
+            "prenom" => $_POST["prenom"],
+            "nom" => $_POST["nom"],
+            "mail" => $_POST["mail"],
+            "tel" => $_POST["tel"],
+        ]
+    );
 
-        $insertionR = $pdo->prepare("INSERT INTO reservation(date_arrivee,date_depart,nbr_adultes,nbr_enfants,id_clients) values(:date_arrivee,:date_depart,:nbr_adultes,:nbr_enfants,(SELECT id_clients FROM clients ORDER BY id_clients DESC LIMIT 1))");
-        $insertionR->execute(
-            [
-                "date_arrivee"=>$_POST["date_arrivee"],
-                "date_depart"=>$_POST["date_depart"],
-                "nbr_adultes"=>$_POST["nbr_adultes"],
-                "nbr_enfants"=>$_POST["nbr_enfants"],
-            ]
-            );
-
-    }
+    $insertionR = $pdo->prepare("INSERT INTO reservation(date_arrivee,date_depart,nbr_adultes,nbr_enfants,id_clients) values(:date_arrivee,:date_depart,:nbr_adultes,:nbr_enfants,(SELECT id_clients FROM clients ORDER BY id_clients DESC LIMIT 1))");
+    $insertionR->execute(
+        [
+            "date_arrivee" => $_POST["date_arrivee"],
+            "date_depart" => $_POST["date_depart"],
+            "nbr_adultes" => $_POST["nbr_adultes"],
+            "nbr_enfants" => $_POST["nbr_enfants"],
+        ]
+    );
+}
 ?>
 
 
@@ -60,11 +56,11 @@ require "bd.php";
     <!-- partie RESERVATION !!!!!!!!!!!!-->
     <div class="reservation">
         <br><br><br><br><br>
-        
+
         <div class="container">
-        <h2>Réserver votre prochain séjour</h2>
-        <br>
-        <h3>"Chaque logement est une destination en soi."</h3>
+            <h2>Réserver votre prochain séjour</h2>
+            <br>
+            <h3>"Chaque logement est une destination en soi."</h3>
             <div class="input">
                 <div class="dateArr">
                     <label for="start">Date d'arrivée</label>
@@ -103,8 +99,8 @@ require "bd.php";
                 </div>
                 <div class="btnResa">
                     <button class="btn btn-lg btn-primary" type="button">je reserve</button>
-                                        
-                                    </div>
+
+                </div>
                 <div class="imgresa">
                     <img src="./assets/img/resa.jpg" alt="">
                 </div>
