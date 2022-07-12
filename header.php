@@ -53,7 +53,7 @@
                 </a>
               <?php } else { ?>
                 <?php if (!empty($_SESSION)) {
-                echo "<i class='fa-solid fa-user'></i>"."<p class='prenomProfil'>" . $_SESSION['prenom'] . "<p>";
+                echo "<i class='fa-solid fa-user user-deco'></i>"."<p class='prenomProfil'>" . $_SESSION['prenom'] . "<p>";
               } ?>
                 <a href="connexion.php?deconnexion=true">
                   <li class="deconnexion">Deconnexion</li>

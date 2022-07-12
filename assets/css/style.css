@@ -15,7 +15,7 @@
     margin-left: 1rem;
 }
 
-.fa-user {
+.user-deco {
     font-size: 2rem;
     margin-right: 1rem;
     margin-top: 0.3rem;
@@ -26,7 +26,7 @@
 }
 
 .user {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 }
 
 .deconnexion {
