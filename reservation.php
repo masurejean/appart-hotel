@@ -1,21 +1,18 @@
 <?php
 session_start();
 require "DB.php";
-$dateArr = strip_tags($_POST['dateArr']);
-$dateDEP = strip_tags($_POST['dateDep']);
+$reservationOk = null;
+if (isset($_POST['reserver'])) {
+// var_dump($_POST);
 
-if (isset($_POST["submit"])) {
-    $insertionC = $pdo->prepare("INSERT INTO clients(prenom,nom,mail,tel ) values(:prenom,:nom,:mail,:tel)");
-    $insertionC->execute(
-        [
-            "prenom" => $_POST["prenom"],
-            "nom" => $_POST["nom"],
-            "mail" => $_POST["mail"],
-            "tel" => $_POST["tel"],
-        ]
-    );
+$date_arrivee = strip_tags($_POST['date_arrivee']);
+$date_depart = strip_tags($_POST['date_depart']);
+$nbr_adultes = strip_tags($_POST['nbr_adultes']);
+$nbr_enfants = strip_tags($_POST['nbr_enfants']);
 
-    $insertionR = $pdo->prepare("INSERT INTO reservation(date_arrivee,date_depart,nbr_adultes,nbr_enfants,id_clients) values(:date_arrivee,:date_depart,:nbr_adultes,:nbr_enfants,(SELECT id_clients FROM clients ORDER BY id_clients DESC LIMIT 1))");
+
+
+    $insertionR = $pdo->prepare("INSERT INTO reservation(date_arrivee,date_depart,nbr_adultes,nbr_enfants) values(:date_arrivee,:date_depart,:nbr_adultes,:nbr_enfants)");
     $insertionR->execute(
         [
             "date_arrivee" => $_POST["date_arrivee"],
@@ -24,6 +21,10 @@ if (isset($_POST["submit"])) {
             "nbr_enfants" => $_POST["nbr_enfants"],
         ]
     );
+    $reservationOk="<strong>Super !</strong> Votre réservation est validée.";
+    ?>
+  
+  <?php
 }
 ?>
 
@@ -64,17 +65,19 @@ if (isset($_POST["submit"])) {
             <h2>Réserver votre prochain séjour</h2>
             <br>
             <h3>"Chaque logement est une destination en soi."</h3>
+<form action="" method="post">
             <div class="input">
+
                 <div class="dateArr">
                     <label for="start">Date d'arrivée</label><br>
-                    <input type="date" id="start" name="trip-start" value="2022-07-01" min="2022-07-01" max="2023-12-31">
+                    <input type="date" id="start" name="date_arrivee" value="2022-07-01" min="2022-07-01" max="2023-12-31">
                     <label class="col-form-label mt-4" for="inputDefault"></label>
 
                 </div>
 
                 <div class="dateDep">
                     <label for="start">Date de depart</label><br>
-                    <input type="date" id="start" name="trip-start" value="2022-07-01" min="2022-07-01" max="2023-12-31">
+                    <input type="date" id="start" name="date_depart" value="2022-07-01" min="2022-07-01" max="2023-12-31">
                     <label class="col-form-label mt-4" for="inputDefault"></label>
 
 
@@ -82,7 +85,7 @@ if (isset($_POST["submit"])) {
 
                 <div class="nombPersA">
                     <label for="exampleSelect1" class="form-label mt-4">Nombre de personnes adultes</label>
-                    <select class="form-select" id="exampleSelect1"><br>
+                    <select class="form-select"  name="nbr_adultes"  id="exampleSelect1"><br>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -92,8 +95,8 @@ if (isset($_POST["submit"])) {
                     </select>
                 </div>
                 <div class="nombEnf">
-                    <label for="exampleSelect1" class="form-label mt-4">Nombre d'enfants</label>
-                    <select class="form-select" id="exampleSelect1">
+                    <label for="exampleSelect1"  class="form-label mt-4">Nombre d'enfants</label>
+                    <select class="form-select"  name="nbr_enfants" id="exampleSelect1">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -102,9 +105,21 @@ if (isset($_POST["submit"])) {
                     </select>
                 </div>
                 <div class="btnResa">
-                    <button class="btn btn-lg btn-primary" type="button">je reserve</button>
-
+                    <button class="btn btn-lg btn-primary" type="submit" name="reserver">je reserve</button><br>
+                    <?php if(!empty($reservationOk)){
+                    echo " <div class='alert alert-dismissible alert-primary'>";
+                                 echo $reservationOk;
+                                 echo "</div>";
+                            } ?>
                 </div>
+                
+                </form>
+               
+                
+   
+  
+                          
+
                 <div class="imgresa">
                     <img src="./assets/img/resa.jpg" alt="">
                 </div>
