@@ -1,5 +1,6 @@
 <?php
 session_start();
+require "DB.php";
 if (isset($_POST['submit'])) {
 
     /* echo var_dump($_POST);  */
@@ -12,6 +13,9 @@ if (isset($_POST['submit'])) {
     $simpleMessage = strip_tags($_POST['simpleMessage']);
     $newsLetterOption = strip_tags($_POST['newsLetterOption']);
     $newCollect = strip_tags($_POST["newCollect"]);
+
+    $sql ="input into contact ()values ()";
+    // TODO envois mail 
 }
 
 
