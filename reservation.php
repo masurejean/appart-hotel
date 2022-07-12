@@ -55,7 +55,7 @@ if (isset($_POST["submit"])) {
 
     <!-- partie RESERVATION !!!!!!!!!!!!-->
     <div class="reservation">
-        
+        <br><br><br><br><br>
 
         <div class="container">
             <h2>Réserver votre prochain séjour</h2>

@@ -4,6 +4,7 @@ require "DB.php";
 if(!empty($_GET['deconnexion'])){
     session_unset();
     unset($_SESSION);
+    header("location:index.php");
   }
 
 
