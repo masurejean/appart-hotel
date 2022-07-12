@@ -1,5 +1,6 @@
 <?php
 require "DB.php";
+session_start();
 if (isset($_POST['send'])) {
     $nom = strip_tags($_POST['nom']);
     $prenom = strip_tags($_POST['prenom']);
@@ -159,7 +160,7 @@ var_dump($client);die; */
                 <br><br>
                 <h4>Déjà inscrit ?</h4>
                 <a href="connexion.php">
-                    <button type="submit" class="btn btn-primary" name="connexion">Se connecter</button>
+                    <button type="button" class="btn btn-primary" name="connexion">Se connecter</button>
                 </a>
             </div>
         </form>

@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="./assets/css/header.css">
   <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -42,7 +43,7 @@
             </li>
           </ul>
           <form class="d-flex">
-            <ul>
+            <ul class="user">
               <?php if (empty($_SESSION)) { ?>
                 <a href="inscription.php">
                   <li><i class="fa-solid fa-user-plus"></i> Inscription</li>
@@ -52,10 +53,10 @@
                 </a>
               <?php } else { ?>
                 <?php if (!empty($_SESSION)) {
-                echo "<p class='prenomProfil'>" . $_SESSION['prenom'] . "<p>";
+                echo "<i class='fa-solid fa-user'></i>"."<p class='prenomProfil'>" . $_SESSION['prenom'] . "<p>";
               } ?>
                 <a href="connexion.php?deconnexion=true">
-                  <li><i class="fa-solid fa-user"></i> Deconnexion</li>
+                  <li class="deconnexion">Deconnexion</li>
                 </a>
               <?php } ?>
               
