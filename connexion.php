@@ -1,10 +1,10 @@
 <?php
 require "DB.php";
-
+session_start();
 if(!empty($_GET['deconnexion'])){
     session_unset();
     unset($_SESSION);
-    header("location:index.php");
+    
   }
 
 
@@ -25,7 +25,7 @@ if (isset($_POST['send'])) {
         $error2 .= "<p>Le champ password ne doit pas être vide.</p>";
     }
 
-    if (empty($error)) {
+    if (empty($error1)|| empty($error2)) {
         $statement = $pdo->prepare("SELECT * FROM clients WHERE mail = :email");
         $statement->execute(
             [
@@ -36,6 +36,7 @@ if (isset($_POST['send'])) {
         $client = $statement->fetch();
         $passwordBaseDonnee = $client['password'];
         if (password_verify($_POST['password'], $passwordBaseDonnee)) {
+            $_SESSION["email"]=$_POST['email'];
             header("location:index.php");
         } else {
             echo "Mot de passe invalide.";

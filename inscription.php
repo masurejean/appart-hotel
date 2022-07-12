@@ -43,7 +43,7 @@ if (isset($_POST['send'])) {
             "mail" => $_POST['email'],
             "password" => $hash,
         ]);
-        var_dump($statement);
+        // var_dump($statement);
         header("location:connexion.php");
     }
 
