@@ -105,7 +105,6 @@ var_dump($client);die; */
                 if (!empty($error1)) {
                 ?>
                     <div class="alert alert-dismissible alert-danger">
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                         <strong>Attention !</strong> <?= $error1 ?>
                     </div>
                 <?php
@@ -120,7 +119,6 @@ var_dump($client);die; */
                 if (!empty($error2)) {
                 ?>
                     <div class="alert alert-dismissible alert-danger">
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                         <strong>Attention !</strong> <?= $error2 ?>
                     </div>
                 <?php
@@ -135,7 +133,6 @@ var_dump($client);die; */
                 if (!empty($error3)) {
                 ?>
                     <div class="alert alert-dismissible alert-danger">
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                         <strong>Attention !</strong> <?= $error3 ?>
                     </div>
                 <?php
@@ -149,7 +146,6 @@ var_dump($client);die; */
                 <?php
                 if (!empty($error4)) {
                 ?><div class="alert alert-dismissible alert-danger">
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                         <strong>Attention !</strong> <?= $error4 ?>
                     </div>
                 <?php

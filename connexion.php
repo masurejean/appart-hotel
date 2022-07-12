@@ -43,7 +43,7 @@ if (isset($_POST['send'])) {
             $_SESSION["email"]=$_POST['email'];
             header("location:index.php");
         } else {
-            echo "Mot de passe invalide.";
+            $error2 .= "Mot de passe invalide.";
         }
     }
 }
@@ -90,7 +90,6 @@ if (isset($_POST['send'])) {
                 if (!empty($error1)) {
                 ?>
                     <div class="alert alert-dismissible alert-danger">
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                         <strong>Attention !</strong> <?= $error1 ?>
                     </div>
                 <?php
@@ -104,7 +103,6 @@ if (isset($_POST['send'])) {
                 <?php
                 if (!empty($error2)) {
                 ?><div class="alert alert-dismissible alert-danger">
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                         <strong>Attention !</strong> <?= $error2 ?>
                     </div>
                 <?php
