@@ -15,6 +15,7 @@ if (isset($_POST['submit'])) {
     $newCollect = strip_tags($_POST["newCollect"]);
 
     $sql ="input into contact ()values ()";
+    // TODO envois mail 
 }
 
 
