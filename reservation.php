@@ -1,5 +1,8 @@
 <?php
 require "DB.php";
+$dateArr = strip_tags($_POST['dateArr']);
+$dateDEP = strip_tags($_POST['dateDep']);
+
 if (isset($_POST["submit"])) {
     $insertionC = $pdo->prepare("INSERT INTO clients(prenom,nom,mail,tel ) values(:prenom,:nom,:mail,:tel)");
     $insertionC->execute(
